@@ -1,0 +1,21 @@
+<?php
+
+/*override the owlcarousel library call to the edited library*/
+
+function trutest_owlcarousel_library_alter(&$libraries, $module)
+{
+    
+     $library = drupal_get_path('module', 'trutest_owlcarousel');
+     
+     
+     //line number 297 has been added to the sytem. a else block to run at the intiate level.
+      $libraries['owl-carousel']['js']=array(
+                                       $library . '/owl.carousel.edited.js' => array( //library override to edited file.
+                                                     'scope' => 'footer',
+                                                )
+          );
+      
+    // dsm($libraries);
+     //dsm($module);
+    
+}
