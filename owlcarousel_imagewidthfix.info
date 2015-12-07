@@ -1,0 +1,9 @@
+name = owlcarousel_imagewidthfix
+description = an override to fix the image width problem in mobile devices on page load in version 7.x-1.5 owlcarousel .
+core = 7.x
+
+
+dependencies[] = libraries
+dependencies[] = owlcarousel
+
+scripts[] = owlcarousel_imagewidthfix.js
