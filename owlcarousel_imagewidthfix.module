@@ -2,7 +2,7 @@
 
 /*override the owlcarousel library call to the edited library*/
 
-function trutest_owlcarousel_library_alter(&$libraries, $module)
+function owlcarousel_imagewidthfix_library_alter(&$libraries, $module)
 {
     
      $library = drupal_get_path('module', 'trutest_owlcarousel');
